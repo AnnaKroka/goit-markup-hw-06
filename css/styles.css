@@ -962,10 +962,12 @@ img {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+    padding-left: 16px;
     color: #ffffff;
     background-color: transparent;
 }
 .subscribe-btn {
+    display: flex;
     min-width: 165px;
     height: 40px;
     padding: 8px 24px;
@@ -989,12 +991,14 @@ img {
     background: #404bbf;
 }
 
+
 @media screen and (max-width: 767px) {
 .page-footer {
      padding: 96px 0;
     }
 .page-logo-footer {
-    align-items: center;
+    display: block;
+    text-align: center;
 }
 .paragraph-text-footer {
      max-width: 288px;
@@ -1003,13 +1007,9 @@ img {
 .text-links {
     text-align: center;
 }
-.footer-logo {
-    margin: 0 auto;
-}
 .form-email {
     width: 288px;
     height: 40px;
-    opacity: 0.3;
     box-shadow: 0 10px 10px 0 #2e2f42;
 }
 .links {
@@ -1022,12 +1022,18 @@ img {
     width: 288px;
     height: 40px;
 }
+.subscribe-btn {
+    display: block;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .subscribe-btn-icon {
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 117px;
+    left: 16px;
     transform: translateY(-50%);
-    margin-left: 16px;
+    /*margin-left: 16px;*/
 }
 }
 
