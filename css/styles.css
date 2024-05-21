@@ -95,7 +95,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-    .page-header {
+    .page-header-container {
             padding-top: 16px;
             padding-bottom: 16px;
         }
@@ -260,6 +260,8 @@ img {
 .page-header-container {
     display: flex;
     justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .menu {
     display: flex;
@@ -267,6 +269,7 @@ img {
     gap: 40px;
 }
 .menu-link {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -304,11 +307,11 @@ img {
     letter-spacing: 0.04em;
     color: #434455;
 }
-.top-contact-menu {
+/*.top-contact-menu {
     margin-top: 16px;
     margin-bottom: 16px;
-}
-.mail-item {
+}*/
+.contact-email {
     display: block;
     margin-bottom: 12px;
 }
@@ -337,11 +340,11 @@ img {
     .top-contact-menu {
         display: flex;
         gap: 40px;
-        margin-top: 24px;
+        /*margin-top: 24px;
         margin-bottom: 24px;
-        padding-right: 140px;
+        padding-right: 140px;*/
     }
-    .mail-item {
+    .contact-email {
         display: flex;
         margin-bottom: 0;
     }
@@ -350,7 +353,6 @@ img {
 .text-background:active {
     background: #404bbf;
 }
-
 .order-service-btn {
     display: block;
     min-width: 169px;
@@ -377,9 +379,9 @@ img {
                 linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                 url('../images/hero/people-office-mobile.jpg');
-            padding: 0;
-            height: 432px;
-            /*max-width: 320px;*/
+            padding: 72px 0;
+            /*height: 432px;
+            max-width: 320px;*/
             margin: 0 auto;
             background-color: #2e2f42;
             background-repeat: no-repeat;
@@ -399,7 +401,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
-    padding-top: 72px;
+    /*padding-top: 72px;*/
 }
 }
 @media screen and (max-width: 767px) and (min-resolution: 192dpi)
@@ -418,11 +420,10 @@ img {
             linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url('../images/hero/people-office-tablet.jpg');
-        height: 436px;
-        /*max-width: 768px;*/
-        padding: 112px 0;
+        /*height: 436px;
+        max-width: 768px;*/
+        padding: 188px 0;
         margin: 0 auto;
-        padding: 0;
         background-color: #2e2f42;
         background-repeat: no-repeat;
         background-position: center;
@@ -441,7 +442,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 36px;
-    padding-top: 112px;
+    /*padding-top: 112px;*/
 }
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi)
@@ -460,11 +461,10 @@ img {
             linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url('../images/hero/people-office.jpg');
-        padding: 188px 0;
+        /*padding: 188px 0;
         height: 600px;
-        /*max-width: 1440px;*/
+        max-width: 1440px;*/
         margin: 0 auto;
-        padding: 0;
         background-color: #2e2f42;
         background-repeat: no-repeat;
         background-position: center;
@@ -483,7 +483,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
-    padding-top: 188px;
+    /*padding-top: 188px;*/
 }
     
 }
@@ -587,6 +587,9 @@ img {
     font-size: 20px;
     line-height: 1.2;
 }
+.benefits-text {
+    font-weight: 400;
+}
 .container-benefit-icon {
     display: flex;
     align-items: center;
@@ -628,7 +631,7 @@ img {
 }
 .text-position {
     text-align: center;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 .team-item {
     border-radius: 0px 0px 4px 4px;
@@ -669,8 +672,9 @@ img {
 @media screen and (max-width: 767px) {
 .team-item {
     width: 264px;
+    margin: 0 auto;
 }
-.paragraph-text {
+.text-position {
     font-weight: 400;
 }
 .team-item:not(:last-child) {
@@ -768,7 +772,7 @@ img {
     width: 288px;
     height: 280px;
 }
-.paragraph-text {
+.portfolio-paragraph {
     font-weight: 400;
 }
 .title-app {
@@ -800,7 +804,7 @@ img {
 .title-app {
     text-align: left;
 }
-.paragraph-text {
+.portfolio-paragraph {
     font-weight: 400;
 }
 }
@@ -822,7 +826,7 @@ img {
     row-gap: 40px;
     flex-wrap: wrap;
 }
-.paragraph-text {
+.portfolio-paragraph {
     font-weight: 400;
 }
 }
@@ -929,7 +933,7 @@ img {
 }
 .paragraph-text-footer {
     max-width: 288px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .text-links {
     text-align: center;
@@ -947,7 +951,7 @@ img {
     color: #ffffff;
 }
 .links {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .paragraph-subscribe {
     text-align: center;
@@ -980,7 +984,7 @@ img {
 }
 .footer-logo {
     max-width: 264px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     margin-right: 24px;
 }
 .paragraph-text-footer {
